@@ -1,0 +1,39 @@
+#######################################
+# Syntax Coloring Map For ESP8266IoTHelper
+#######################################
+
+#######################################
+# Library (KEYWORD3)
+#######################################
+
+ESP8266IoTHelper    KEYWORD3    RESERVED_WORD
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+rebootOnUpdate              KEYWORD2
+followRedirects             KEYWORD2
+initialize                  KEYWORD2
+execute                     KEYWORD2
+wifiConnectionTimeout       KEYWORD2
+smartConfigTimeout          KEYWORD2
+smartConfigTriggerEnabled   KEYWORD2
+smartConfigTriggerPullup    KEYWORD2
+smartConfigTriggerPin       KEYWORD2
+httpOtaEnabled              KEYWORD2
+httpOtaEnabled              KEYWORD2
+httpOtaHost                 KEYWORD2
+httpOtaPort                 KEYWORD2
+httpOtaPath                 KEYWORD2
+httpOtaCheckPeriod          KEYWORD2
+lastHttpOtaCheckTime        KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+

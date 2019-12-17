@@ -16,8 +16,6 @@
 #include <ESP8266httpUpdate.h>
 #include <ArduinoOTA.h>
 
-#include <EEPROM.h>
-
 ESP8266IoTHelper::ESP8266IoTHelper(void)
 {
     ESPhttpUpdate.rebootOnUpdate(true);

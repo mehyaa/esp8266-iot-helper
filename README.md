@@ -48,9 +48,11 @@ And on your loop function call `execute` (preferably the first line):
 
 **`iotHelper.smartConfigTriggerEnabled`:** Set or get SmartConfig trigger enabled. Must be set before `initialize`.
 
-**`iotHelper.smartConfigTriggerPullup`:** Set or get SmartConfig trigger is pull up or not. Must be set before `initialize`.
-
 **`iotHelper.smartConfigTriggerPin`:** Set or get SmartConfig trigger pin. Must be set before `initialize`.
+
+**`iotHelper.smartConfigTriggerPinMode`:** Set or get SmartConfig trigger pin mode. Must be set before `initialize`.
+
+**`iotHelper.smartConfigTriggerPinPullup`:** Set or get SmartConfig trigger is pull up or not. Must be set before `initialize`.
 
 **`iotHelper.httpOtaEnabled`:** Set or get HTTP OTA updates enabled.
 

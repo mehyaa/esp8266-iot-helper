@@ -53,14 +53,7 @@ void ESP8266IoTHelper::initialize(void)
 {
     if (_smartConfigTriggerEnabled)
     {
-        if (_smartConfigTriggerPullup)
-        {
-            pinMode(_smartConfigTriggerPin, INPUT_PULLUP);
-        }
-        else
-        {
-            pinMode(_smartConfigTriggerPin, INPUT);
-        }
+        pinMode(_smartConfigTriggerPin, _smartConfigTriggerPinMode);
     }
 
     WiFi.mode(WIFI_STA);
@@ -245,8 +238,8 @@ void ESP8266IoTHelper::checkSmartConfigTriggered(void)
 
     int isSmartConfig = digitalRead(_smartConfigTriggerPin);
 
-    if ((_smartConfigTriggerPullup && isSmartConfig == LOW) ||
-        (!_smartConfigTriggerPullup && isSmartConfig == HIGH))
+    if ((_smartConfigTriggerPinPullup && isSmartConfig == LOW) ||
+        (!_smartConfigTriggerPinPullup && isSmartConfig == HIGH))
     {
         Serial.println("SmartConfig triggered, waiting config.");
 

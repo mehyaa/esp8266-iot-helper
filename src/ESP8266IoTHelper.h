@@ -48,16 +48,6 @@ public:
         return _smartConfigTriggerEnabled;
     }
 
-    void smartConfigTriggerPullup(bool enabled)
-    {
-        _smartConfigTriggerPullup = enabled;
-    }
-
-    bool smartConfigTriggerPullup(void)
-    {
-        return _smartConfigTriggerPullup;
-    }
-
     void smartConfigTriggerPin(unsigned int pin)
     {
         _smartConfigTriggerPin = pin;
@@ -66,6 +56,26 @@ public:
     unsigned int smartConfigTriggerPin(void)
     {
         return _smartConfigTriggerPin;
+    }
+
+    void smartConfigTriggerPinMode(int pinMode)
+    {
+        _smartConfigTriggerPinMode = pinMode;
+    }
+
+    int smartConfigTriggerPinMode(void)
+    {
+        return _smartConfigTriggerPinMode;
+    }
+
+    void smartConfigTriggerPinPullup(bool enabled)
+    {
+        _smartConfigTriggerPinPullup = enabled;
+    }
+
+    bool smartConfigTriggerPinPullup(void)
+    {
+        return _smartConfigTriggerPinPullup;
     }
 
     void httpOtaEnabled(bool enabled)
@@ -143,8 +153,9 @@ private:
     unsigned int _wifiConnectionTimeout = 30;
     unsigned int _smartConfigTimeout = 180;
     bool _smartConfigTriggerEnabled = false;
-    bool _smartConfigTriggerPullup = false;
     unsigned int _smartConfigTriggerPin = 2;
+    int _smartConfigTriggerPinMode = INPUT;
+    bool _smartConfigTriggerPinPullup = false;
     bool _httpOtaEnabled = false;
     String _httpOtaHost = "";
     unsigned int _httpOtaPort = 80;
